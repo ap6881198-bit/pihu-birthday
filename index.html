@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Pihu 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page active" id="page0">
+  <h1>💖 For Pihu Only 💖</h1>
+  <p>Enter the secret password</p>
+  <input id="passInput" type="password" placeholder="Password">
+  <button onclick="checkPassword()">Unlock</button>
+  <p id="wrongPass"></p>
+</div>
+
+<div class="page" id="page1">
+  <h1>🎂 Happy Birthday Pihu 🎂</h1>
+  <button onclick="nextPage()">Start 💕</button>
+</div>
+
+<div class="page" id="page2">
+  <h2>🎵 Birthday Song 🎵</h2>
+  <audio controls>
+    <source src="music/happybirthday.mp3" type="audio/mp3">
+  </audio>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page3">
+  <h2>📸 Our Memories 💖</h2>
+  <img id="slideImg" src="photos/pic1.jpg" width="250">
+  <audio controls>
+    <source src="music/romantic.mp3" type="audio/mp3">
+  </audio>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page4">
+  <h2>🎥 Our Video 💕</h2>
+  <video controls width="300">
+    <source src="video/us.mp4" type="video/mp4">
+  </video>
+  <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="page5">
+  <h2>💌 Letter for Pihu 💌</h2>
+  <p>
+    My Pihu ❤️<br><br>
+    Happy Birthday my love 🎂<br>
+    You mean everything to me 💕
+  </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
